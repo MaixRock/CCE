@@ -166,7 +166,7 @@ bool Quadrangle::isConvex(){
 
 		for (int i = 1; i < 4; i++) {
 			//Проверка изменения знака псевдо скалярного произведения
-			if (ScalarPseudo(V2D[i-1], V2D[i]) >= 0) {
+			if (ScalarPseudo(V2D[i-1], V2D[i]) > 0) {
 				dynamic = true;
 			}
 			else dynamic = false;
